@@ -1,20 +1,41 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
+class shop
+{
+private:
+  int itemId[100];
+  int itemPrice[10000];
+  int counter;
+
+public:
+  void initcounter(){counter = 0;};
+  void setPrice()
+  {
+    cout << "Enter id" << endl;
+    cin >> itemId[counter];
+    cout << "Enter price" << endl;
+    cin >> itemPrice[counter];
+    // counter++;
+  }
+  void displayPrice()
+  {
+    for (int i = 0; i < counter; i++)
+    {
+      cout << "The price of item with Id" << itemId[i] << " is " << itemPrice[i] << endl;
+    }
+  }
+
+};
 int main()
 {
-  int a=4,b=5;
-  cout<<a<<endl;
-  cout<<b<<endl;
-  char c='t';
-  cout<<c<<endl;
-  float d=3.188989994;
-  cout<<d<<endl;
-  bool is_true= true;
-  cout<<is_true<<endl;
-  double e = 3.14444;
-  cout<<e<<endl;
-  long f = 3.34344343434309898908;
-  cout<<f<<endl;
+  // int counter;
+  shop tejya;
+  tejya.initcounter();
+  tejya.setPrice();
+  tejya.setPrice();
+  tejya.setPrice();
+  tejya.setPrice();
+  tejya.displayPrice();
   return 0;
 }
