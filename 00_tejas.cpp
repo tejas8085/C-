@@ -1,41 +1,53 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class shop
+class Student
 {
-private:
-  int itemId[100];
-  int itemPrice[10000];
-  int counter;
+  int roll_number;
 
 public:
-  void initcounter(){counter = 0;};
-  void setPrice()
+  void setRoll_number(int x)
   {
-    cout << "Enter id" << endl;
-    cin >> itemId[counter];
-    cout << "Enter price" << endl;
-    cin >> itemPrice[counter];
-    // counter++;
+    roll_number = x;
   }
-  void displayPrice()
+  void getRoll_number()
   {
-    for (int i = 0; i < counter; i++)
-    {
-      cout << "The price of item with Id" << itemId[i] << " is " << itemPrice[i] << endl;
-    }
+    cout << "The rol number is " << roll_number << endl;
   }
-
 };
+
+class Exam : public Student
+{
+protected:
+  int maths;
+  int physics;
+
+public:
+  void setMarks(int x, int y)
+  {
+    maths = x;
+    physics = y;
+  }
+  void getMarks()
+  {
+    cout << "The marks of the maths is " << maths << endl;
+    cout << "The marks of the physics is " << physics << endl;
+  }
+};
+ class result : public Exam{
+   public:
+  
+   void display_result(){
+      getRoll_number();
+   getMarks();
+   cout<<"your result is "<<(maths + physics)/2<<"%"<<endl;
+   }
+ };
 int main()
 {
-  // int counter;
-  shop tejya;
-  tejya.initcounter();
-  tejya.setPrice();
-  tejya.setPrice();
-  tejya.setPrice();
-  tejya.setPrice();
-  tejya.displayPrice();
+  result tejas;
+  tejas.setRoll_number(1);
+  tejas.setMarks(90,96);
+  tejas.display_result();
   return 0;
 }

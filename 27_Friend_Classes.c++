@@ -1,8 +1,3 @@
-
-
-
-
-
 #include <iostream>
 using namespace std;
 
@@ -10,7 +5,7 @@ class Complex;
 class Calculator
 {
 public:
-    int add(int a, int b)
+    int add(int a, int b)  
     {
         return a + b;
     }

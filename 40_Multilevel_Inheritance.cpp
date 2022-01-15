@@ -57,7 +57,11 @@ public:
 
 int main(){
     
-    cout<<"tejas";
+    Result tejas;
+    tejas.set_roll_number(1);
+    tejas.set_marks(90.0,92.0);
+    tejas.display_results();
+
 
     return 0;
 }
