@@ -9,7 +9,7 @@ int main(){
 
     cout<<a;
     cout<<"\n"<<b;
-    cout<<"\nth value"<<x;
+    cout<<"\nth value "<<x;
     cout<<is_true;
     cout<<m;
     return 0;

@@ -6,7 +6,7 @@ class Student
 protected:
     int Roll_no;
 
-public:              
+public:                                                             
     void set_number(int r)
     {
         Roll_no = r;

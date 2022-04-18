@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Base Class
 class Employee
 {
 public:
@@ -15,7 +14,6 @@ public:
     Employee() {}
 };
 
-// Creating a Programmer class derived from Employee Base class
 class Programmer : public Employee
 {
 public:

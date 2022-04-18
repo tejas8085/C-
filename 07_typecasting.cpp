@@ -24,7 +24,8 @@ int main(){
     cout<<"The size of 34.4F is "<<sizeof(34.4F)<<endl;
     cout<<"The size of 34.4l is "<<sizeof(34.4l)<<endl;
     cout<<"The size of 34.4L is "<<sizeof(34.4L)<<endl;
-    cout<<"The value of d is "<<d<<endl<<"The value of e is "<<e;  
+    cout<<"The value of d is "<<d<<endl;
+    cout<<"The value of e is "<<e<<endl;  
 
     // *************Reference Variables**************** 
     float x = 455;

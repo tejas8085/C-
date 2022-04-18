@@ -22,7 +22,7 @@ int main(){
     cout<<"less than/equal:"<<(a<=b)<< endl;
     cout<<"greater than / equal:"<<(a>=b)<<endl<<endl;
 
-    cout<<"logical operators";
+    cout<<"logical operators"<<endl;
     cout<<"((a==b) && (a<b)) is:"<<((a==b) && (a<b))<<endl; 
     cout<<"((a==b) || (a<b)) is:"<<((a==b) || (a<b))<<endl; 
     cout<<"(!(a==b)) is:"<<(!(a==b))<<endl; 

@@ -21,6 +21,7 @@ public:
 class Derived : public Base1, public Base2
 {
     int a;
+
 public:
     void great()
     {
@@ -28,18 +29,23 @@ public:
     }
 };
 
-class B{
-    public:
-    void say(){
-        cout<<"Hello World"<<endl;
+class B
+{
+public:
+    void say()
+    {
+        cout << "Hello World" << endl;
     }
 };
 
-class D:public B{
+class D : public B
+{
     int a;
-    public:
-    void say(){
-        cout<<"Hello India"<<endl;
+
+public:
+    void say()
+    {
+        cout << "Hello India" << endl;
     }
 };
 int main()

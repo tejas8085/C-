@@ -21,7 +21,7 @@ int main(){
     cin>>n;
     cout<<"The factorial of "<<n<<" is "<<factorial(n)<<endl;
 
-    cout<<"the fiblachi series is "<<fib(n);
+    cout<<"the fibonacci series is "<<fib(n);
 
     return 0;
 }
